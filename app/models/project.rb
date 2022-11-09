@@ -2,9 +2,9 @@ class Project < ApplicationRecord
     validates_presence_of :title, :description
   end
 
-  RSpec.describe Project, type: :model do
+ 
     # ...
-    require "rails_helper"
+    
     context "scopes tests" do
       let(:params) { { title: "Title", description: "some description" } }
       before(:each) do
@@ -17,5 +17,4 @@ class Project < ApplicationRecord
         expect(Project.count).to eq(3)
       end
   
-    end
-  end
+    end 
