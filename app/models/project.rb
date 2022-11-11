@@ -16,5 +16,5 @@ class Project < ApplicationRecord
       it "should return all projects" do
         expect(Project.count).to eq(3)
       end
-  
+
     end 
