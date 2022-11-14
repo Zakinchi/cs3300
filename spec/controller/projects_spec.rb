@@ -15,4 +15,9 @@ RSpec.describe ProjectsController, type: :controller do
         expect(response).to be_successful
       end
     end
+    context "GET#delete" do
+    it "deletes an event" do
+      get :index
+      expect(response).to be_successful
+    end
   end
